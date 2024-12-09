@@ -22,4 +22,26 @@
 
 
 ### Protein-Protein Interaction Network Creation
-  In order to determine potential connections between associated genes and proteins in relation to Angelman Syndrome, a PPI network was created. First, the aforementioned associated genes were searched in the EBI IntAct database. Results were filtered to only include human protein:protein interactions, and the MI score was narrowed to > 0.5 to provide more certainty. A table was downloaded from IntAct that included a list of seed proteins and target proteins that could then be uploaded to Cytoscape, functionally analyzed, and formed into a visual network. The network is attached in the repository under the file name /
+  In order to determine potential connections between associated genes and proteins in relation to Angelman Syndrome, a PPI network was created. First, the aforementioned associated genes were searched in the EBI IntAct database. Results were filtered to only include human protein:protein interactions, and the MI score was narrowed to > 0.5 to provide more certainty. A table was downloaded from IntAct that included a list of seed proteins (known gene protein products) and target proteins that could then be uploaded to Cytoscape, functionally analyzed, and formed into a visual network. The network is attached in the repository under the file name /angelman-syndrome.cys.
+
+High-confidence interactions include:
+TP53 (0.95): Known to regulate neuronal apoptosis and DNA repair.
+CTNNB1 (0.92): Plays a role in synaptic signaling and neuronal development.
+RAD23A (0.85): Involved in protein ubiquitination and degradation pathways.
+
+Key Interactions:
+UBE3A interacts with 30 proteins, including high-confidence interactions with:
+9606.ENSP00000262455 (highest score: 582).
+9606.ENSP00000489407 (score: 322).
+9606.ENSP00000257770 (score: 331).
+These interactions highlight proteins likely involved in UBE3A's role in synaptic signaling and neuronal development.
+
+### Tissue-Specific eQTLs
+  In order to further understand the relationships between the phenotype of Angelman syndrome and the complex genotypic possibilities in relation to the syndrome, multiple tissue-specific expression quantitative trait loci were pulled out from the GTEX portal. 
+![Table displaying eQTLs for Angelman syndrome, particularly of UBE3A, from the GTEX portal. Column labels include Gencode ID, Gene Symbol, Variant ID, SNP ID, P-Value, NES, and Tissue](https://github.com/user-attachments/assets/1852678d-246d-49fa-affe-aea62216baa8)
+
+### Hypothesis and Proposed Experiment
+**Hypothesis:** UBE3A deficiency leads to accumulation of toxic proteins, altering neuronal function.
+The inability to degrade misfolded or damaged proteins results in toxic buildup within neurons, causing cellular stress, synaptic dysfunction, and neurodevelopmental deficits. The connection with other proteins may have to do with the fact that ubiquitin protein ligase ubiquitinates and degrades other proteins (mostly synaptic proteins in the brain). 
+
+**Experiment:** Introduce the loss-of-function mutation of UBE3A into a population of mice and determine if they develop similar cognitive symptoms to humans with Angelman Syndrome. Then perform autopsies on them to determine if they have excess toxins in their brain tissue in comparison to a group of control mice that have functional UBE3A genes. 
